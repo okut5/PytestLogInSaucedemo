@@ -1,1 +1,4 @@
 .venv/
+allure_report
+allure_results
+results
