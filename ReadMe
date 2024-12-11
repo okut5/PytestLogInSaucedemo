@@ -1,0 +1,3 @@
+Run script: ./install_requirements.sh
+IF it is not executable: run: chmod +x ./install_requirements.sh
+Run test by: robot --argumentfile arguments.txt
