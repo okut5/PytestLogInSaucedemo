@@ -12,7 +12,7 @@ Test Login For All Users
         Run Login Test And Continue    ${USERNAME}
         Close Browser
     END
-    
+
 *** Keywords ***
 Run Login Test And Continue
     [Arguments]    ${USERNAME}
