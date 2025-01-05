@@ -6,6 +6,10 @@ Library    DateTime
 ${PASSWORD}    secret_sauce
 ${URL}         https://www.saucedemo.com
 @{USERS}       standard_user    locked_out_user    problem_user    performance_glitch_user    error_user    visual_user
+${BROWSER}     headlesschrome
+
+*** Comments *** 
+#  Browser can be used "chrome" or "headlesschrome"
 
 *** Test Cases ***
 Test Login For All Users
@@ -22,7 +26,7 @@ Run Login Test And Continue
 Run Login Test
     [Arguments]    ${USERNAME}
     ${start_time}=    Get Time    epoch
-    Open Browser    ${URL}    Chrome
+    Open Browser    ${URL}    ${BROWSER}
     Input Text      id:user-name    ${USERNAME}
     Input Text      id:password     ${PASSWORD}
     Click Element   id:login-button
