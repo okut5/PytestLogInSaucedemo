@@ -32,7 +32,7 @@ jobs:
       run: robot --variable BROWSER:headlesschrome --outputdir results test.robot
 
     - name: Upload Robot Framework results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: robot-framework-results
         path: results/
